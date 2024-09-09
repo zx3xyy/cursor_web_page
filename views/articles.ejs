@@ -1,0 +1,14 @@
+<%- include('layout', { title: 'Articles' }) %>
+
+    <h1 class="mb-4">My Articles</h1>
+    <% articles.forEach(article=> { %>
+        <div class="article-preview">
+            <h2>
+                <%= article.title %>
+            </h2>
+            <p>
+                <%= article.content %>
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        <% }) %>
